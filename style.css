@@ -25,6 +25,9 @@ html {
   font-size: 16px;
   color: white;
   text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
 }
 
 .about {
