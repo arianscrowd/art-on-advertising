@@ -13,15 +13,18 @@ html {
 }
 
 .menu {
-    display: flex;
-    margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .menu a {
-    margin: 0 12px;
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
+  display: block;
+  margin: 5px 0;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
 }
 
 .about {
@@ -153,37 +156,32 @@ button:hover {
     }
 }
 
-/* MOBILE FIX */
 @media (max-width: 768px) {
-
   body {
     padding: 10px;
-    text-align: center;
+  }
+
+  .service-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 15px;
   }
 
   nav {
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  }
+  h1 {
+  font-size: 24px;
   }
 
-  .services {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  h2 {
+  font-size: 20px;
   }
 
-  .card {
-    width: 90%;
-    margin-bottom: 20px;
-  }
-
-  h1, h2, p {
-    text-align: center;
-  }
-
-  button {
-    display: block;
-    margin: 0 auto;
+  p {
+  font-size: 14px;
   }
 }
