@@ -152,3 +152,22 @@ button:hover {
         width: 30%;
     }
 }
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .service-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+}
