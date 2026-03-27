@@ -153,21 +153,37 @@ button:hover {
     }
 }
 
+/* MOBILE FIX */
 @media (max-width: 768px) {
+
   body {
     padding: 10px;
-  }
-
-  .service-container {
-    flex-direction: column;
-  }
-
-  .card {
-    width: 100%;
-    margin-bottom: 15px;
+    text-align: center;
   }
 
   nav {
     flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  h1, h2, p {
+    text-align: center;
+  }
+
+  button {
+    display: block;
+    margin: 0 auto;
   }
 }
