@@ -1,1 +1,3 @@
-console.log("Website Loaded");
+function toggleMenu() {
+  document.getElementById("sideMenu").classList.toggle("active");
+}
